@@ -1,3 +1,26 @@
 .body{
-    background-color: rgb(157, 233, 252);
+    background-color: rgb(216, 247, 255);
+}
+
+.hello{
+    position: fixed;
+    background-color: rgb(195, 234, 239);
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    text-align: center;
+}
+
+.hello-tile{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    background-color: rgb(131, 233, 199);
+    width: 300px;
+    height: 150px;
+    margin: auto;
+    border-radius: 15px;
 }
