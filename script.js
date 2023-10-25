@@ -14,3 +14,31 @@ rotateBox.addEventListener('click', () => {
     }
     isExpanded = !isExpanded;
 });
+
+const htj = document.getElementById('hello-tile-js');
+
+htj.addEventListener('mousemove', (e) => {
+    const boxRect = htj.getBoundingClientRect();
+    const boxCenterX = boxRect.left + boxRect.width / 2;
+    const boxCenterY = boxRect.top + boxRect.height / 2;
+
+    const dx = e.clientX - boxCenterX;
+    const dy = e.clientY - boxCenterY;
+    const maxDistance = Math.sqrt(
+        Math.pow(boxRect.width, 2) + 
+        Math.pow(boxRect.height, 2)
+    );
+
+    const angle = Math.atan2(dy, dx);
+    const distance = Math.min(Math.sqrt(dx * dx + dy * dy), maxDistance);
+    const pushDepth = 20 * (1 - distance / maxDistance);
+
+    const transformX = pushDepth * Math.cos(angle);
+    const transformY = pushDepth * Math.sin(angle);
+
+    htj.style.transform = `translate(-50%, -50%) translate3d(${transformX}px, ${transformY}px, ${pushDepth}px)`;
+});
+
+htj.addEventListener('mouseleave', () => {
+    htj.style.transform = 'translate(-50%, -50%) translate3d(0, 0, 0)';
+});

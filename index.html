@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="styles/header.css">
     <title>Portfolio-v4</title>
 </head>
-<body class="body">
+<body>
     <header>
         <div class="header" id="headerjs">
             <div class="header-links" id="header-links-js">
-                <a href="" style="text-decoration: none;">
+                <a href="index.html" style="text-decoration: none;">
                     <div class="header-text">
                         <p style="line-height: 40px;">Home</p>
                     </div>
@@ -26,6 +26,10 @@
                         <p style="line-height: 40px;">Tasks</p>
                     </div>
                 </a>
+                <div class="overview">
+                    <p>This portfolio is version beta4.0</p>
+                    <a href="https://github.com/nikkou-0814/portfolio-v4" style="color: black;">View GitHub Repository</a>
+                </div>
             </div>
         </div>
         <div class="header-updown" id="header-updown-js">
@@ -34,11 +38,32 @@
     </header>
 
     <div class="hello">
-        <div class="hello-tile">
+        <div class="hello-tile" id="hello-tile-js">
             <h1>HelloWorld!</h1>
-            <h3>My name is KotaroIto</h2>
+            <h1 style="font-size: 23px;">My name is KotaroIto</h1>
+        </div>
+        <div class="down" id="down-js">
+            <svg fill="#000000" height="25px" width="25px" style="margin: 15px 0 0 12px; transform: rotate(180deg);" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_224_" d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394 l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393 C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z"></path> </g></svg>
+        </div> 
+    </div>
+
+    <div class="about">
+        <h1 class="abouth">私について</h1>
+        <br>
+        <div class="profile">
+            <h1 class="about-1">プロフィール</h1>
+            <p class="about-texts">名前：KotaroIto<br>年齢：14歳<br>誕生日：2009/08/14<br>好きなゲーム：VALORANT</p>
+        </div>
+        <div class="skill">
+            <h1 class="about-1" style="padding-top: 60px;">スキル</h1>
+            <p class="about-texts" style="padding-top: 35px;">フロントエンド：HTML, CSS<br>バックエンド：Python, PHP<br>天才的すぎるスキル：コミュ障<br>ツール：AfterEffects, Vercel</p>
+        </div>
+        <div class="noobs">
+            <h1 class="about-1" style="padding-top: 40px;">苦手なこと</h1>
+            <p class="about-texts" style="padding-top: 10px;">教科：数学, 国語<br>コーディング：PHP<br>食べ物：きのこ系の物<br>運動：体力がない</p>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
