@@ -13,8 +13,8 @@ rotateBox.addEventListener('click', () => {
         header.style.opacity = '1';
         rotateBox.style.transform = 'rotate(180deg)';
     } else {
-        header.style.top = '-130vh';
-        header.style.transform = 'scale(1.5)';
+        header.style.top = '-180vh';
+        header.style.transform = 'scale(2.5)';
         header.style.opacity = '0';
         rotateBox.style.transform = 'rotate(0deg)';
     }

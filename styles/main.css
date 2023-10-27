@@ -5,7 +5,7 @@ body, html {
 }
 
 .hello{
-    background-color: #a2a8cd;
+    background-color: #4f5578;
     width: 100%;
     height: 100%;
     z-index: -100;
@@ -20,11 +20,9 @@ body, html {
     width: 300px;
     height: 150px;
     margin: auto;
-    box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.1);
     transform: translate(-50%, -50%) translate3d(0, 0, 0);
     transition: all 0.2s ease;
     border: 3px solid transparent;
-    -webkit-border-image: linear-gradient(-120deg, violet, indigo, blue, green, yellow, orange, red, violet);
     border-image: linear-gradient(-120deg, violet, indigo, blue, green, yellow, orange, red, violet);
     border-image-slice: 1;
     animation: hellotilerainbow 2s linear infinite;
@@ -34,42 +32,34 @@ body, html {
 
 @keyframes hellotilerainbow {
     0% {
-        -webkit-border-image-source: linear-gradient(-120deg, violet, indigo, blue, green, yellow, orange, red, violet);
         border-image-source: linear-gradient(-120deg, violet, indigo, blue, green, yellow, orange, red, violet);
         box-shadow: 0 3px 20px 1px rgba(204, 94, 255, 0.7);
     }
     14% {
-        -webkit-border-image-source: linear-gradient(-120deg, red, violet, indigo, blue, green, yellow, orange, red);
         border-image-source: linear-gradient(-120deg, red, violet, indigo, blue, green, yellow, orange, red);
         box-shadow: 0 3px 20px 1px rgba(255, 0, 0, 0.7);
     }
     28% {
-        -webkit-border-image-source: linear-gradient(-120deg, orange, red, violet, indigo, blue, green, yellow, orange);
         border-image-source: linear-gradient(-120deg, orange, red, violet, indigo, blue, green, yellow, orange);
         box-shadow: 0 3px 20px 1px rgba(255, 140, 0, 0.7);
     }
     42% {
-        -webkit-border-image-source: linear-gradient(-120deg, yellow, orange, red, violet, indigo, blue, green, yellow);
         border-image-source: linear-gradient(-120deg, yellow, orange, red, violet, indigo, blue, green, yellow);
         box-shadow: 0 3px 20px 1px rgba(255, 255, 0, 0.7);
     }
     57% {
-        -webkit-border-image-source: linear-gradient(-120deg, green, yellow, orange, red, violet, indigo, blue, green);
         border-image-source: linear-gradient(-120deg, green, yellow, orange, red, violet, indigo, blue, green);
         box-shadow: 0 3px 20px 1px rgba(0, 128, 0, 0.7);
     }
     71% {
-        -webkit-border-image-source: linear-gradient(-120deg, blue, green, yellow, orange, red, violet, indigo, blue);
         border-image-source: linear-gradient(-120deg, blue, green, yellow, orange, red, violet, indigo, blue);
         box-shadow: 0 3px 20px 1px rgba(0, 0, 255, 0.7);
     }
     85% {
-        -webkit-border-image-source: linear-gradient(-120deg, indigo, blue, green, yellow, orange, red, violet, indigo);
         border-image-source: linear-gradient(-120deg, indigo, blue, green, yellow, orange, red, violet, indigo);
         box-shadow: 0 3px 20px 1px rgba(75, 0, 130, 0.7);
     }
     100% {
-        -webkit-border-image-source: linear-gradient(-120deg, violet, indigo, blue, green, yellow, orange, red, violet);
         border-image-source: linear-gradient(-120deg, violet, indigo, blue, green, yellow, orange, red, violet);
         box-shadow: 0 3px 20px 1px rgba(204, 94, 255, 0.7);
     }
