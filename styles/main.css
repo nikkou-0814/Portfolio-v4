@@ -16,7 +16,7 @@ body, html {
     position: absolute;
     top: 50%;
     left: 50%;
-    background: linear-gradient(144deg, rgba(255,137,137,0.3) 0%, rgba(146,105,255,0.3) 25%, rgba(117,198,245,0.3) 50%, rgba(135,250,174,0.3) 75%, rgba(252,255,153,0.3) 100%);
+    background: linear-gradient(144deg, rgba(255, 137, 137, 0.3) 0%, rgba(146, 105, 255, 0.3) 25%, rgba(117, 198, 245, 0.3) 50%, rgba(135, 250, 174, 0.3) 75%, rgba(252, 255, 153, 0.3) 100%);
     width: 300px;
     height: 150px;
     margin: auto;
@@ -24,6 +24,7 @@ body, html {
     transform: translate(-50%, -50%) translate3d(0, 0, 0);
     transition: all 0.2s ease;
     border: 3px solid transparent;
+    -webkit-border-image: linear-gradient(-120deg, violet, indigo, blue, green, yellow, orange, red, violet);
     border-image: linear-gradient(-120deg, violet, indigo, blue, green, yellow, orange, red, violet);
     border-image-slice: 1;
     animation: hellotilerainbow 2s linear infinite;
