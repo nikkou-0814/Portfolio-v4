@@ -40,6 +40,10 @@
         </div>
     </header>
 
+    <div class="notifications" id="nftos-motion">
+        <p style="text-align: center; margin: auto;" id="device-info"></p>
+    </div>
+
     <div class="hello" id="hello-js">
         <div id="hello-tile-js"class="hello-tile">
             <p style="font-size: 30px;">HelloWorld!👋</p>
@@ -65,7 +69,36 @@
             <p class="about-texts" style="padding-top: 10px;">教科：数学, 国語<br>コーディング：PHP<br>食べ物：きのこ系の物<br>運動：体力がない</p>
         </div>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                var scrollingElement = document.getElementById("nftos-motion");
+                scrollingElement.style.right = "0";
+            }, 100);
+        });
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                var scrollingElement = document.getElementById("nftos-motion");
+                scrollingElement.style.right = "-205px";
+            }, 4000);
+        });
 
+        var userAgent = navigator.userAgent;
+
+        var deviceType;
+        if (userAgent.match(/Mac/i)) {
+          deviceType = "Mac";
+        } else if (userAgent.match(/iPhone/i)) {
+          deviceType = "iPhone";
+        } else if (userAgent.match(/Windows/i)) {
+          deviceType = "Windows";
+        } else {
+          deviceType = "Other";
+        }
+
+        var deviceInfo = document.getElementById('device-info');
+        deviceInfo.textContent = "Loading Completed Device>" + deviceType;
+    </script>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
 </body>

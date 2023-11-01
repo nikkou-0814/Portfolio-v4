@@ -2,7 +2,6 @@ const rotateBox = document.getElementById('header-updown-js');
 const header = document.getElementById('headerjs');
 const links = document.getElementById('header-links-js');
 const htj = document.getElementById('hello-tile-js');
-const sousyoku1 = document.getElementById('')
 
 let isExpanded = false;
 
