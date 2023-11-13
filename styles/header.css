@@ -57,6 +57,10 @@
     background-color: #6cf57e;
 }
 
+.header-button:active{
+    transform: scale(0.9) translateY(1px)
+}
+
 .overview{
     position: absolute;
     bottom: 20px;

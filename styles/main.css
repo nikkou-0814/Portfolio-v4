@@ -80,7 +80,7 @@ body, html {
     margin-top: -22px;
 }
 
-.abouth{
+.bh{
     padding-top: 20px;
 }
 
@@ -183,4 +183,30 @@ body, html {
     transition: all 2s;
     transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
     width: 100%;
+}
+
+.notes{
+    height: 500px;
+    background-color: rgb(200, 240, 231);
+    margin-top: -23px;
+    text-align: center;
+}
+
+.note{
+    background-color: rgb(255, 255, 255, 0.2);
+    box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.1);
+    height: 50px;
+    width: 300px;
+    border-radius: 15px;
+    margin: auto;
+    transition: all 0.2s ease;
+}
+
+.note:hover{
+    transform: scale(1.1);
+}
+
+.notesh{
+    font-size: 25px;
+    padding-top: 5px;
 }
