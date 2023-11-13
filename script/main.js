@@ -42,13 +42,6 @@ htj.addEventListener('mouseleave', () => {
     htj.style.transform = 'translate(-50%, -50%) translate3d(0, 0, 0)';
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(function() {
-        var scrollingElement = document.getElementById("bgwavejs");
-        scrollingElement.style.bottom = "-4vh";
-    }, 0);
-});
-
 var unit = 100,
     canvasList,
     info = {},
