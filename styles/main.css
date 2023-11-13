@@ -5,7 +5,7 @@ body, html {
 }
 
 .hello{
-    background-color: #4f5578;
+    background-color: #8191ec;
     width: 100%;
     height: 100%;
     z-index: -100;
@@ -22,45 +22,35 @@ body, html {
     margin: auto;
     transform: translate(-50%, -50%) translate3d(0, 0, 0);
     transition: all 0.2s ease;
-    border: 3px solid transparent;
-    border-image: linear-gradient(-120deg, violet, indigo, blue, green, yellow, orange, red, violet);
-    border-image-slice: 1;
-    animation: hellotilerainbow 2s linear infinite;
+    animation: hellotilerainbow 4s linear infinite;
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
+    border-radius: 15px;
 }
 
 @keyframes hellotilerainbow {
     0% {
-        border-image-source: linear-gradient(-120deg, violet, indigo, blue, green, yellow, orange, red, violet);
         box-shadow: 0 3px 20px 1px rgba(204, 94, 255, 0.7);
     }
     14% {
-        border-image-source: linear-gradient(-120deg, red, violet, indigo, blue, green, yellow, orange, red);
         box-shadow: 0 3px 20px 1px rgba(255, 0, 0, 0.7);
     }
     28% {
-        border-image-source: linear-gradient(-120deg, orange, red, violet, indigo, blue, green, yellow, orange);
         box-shadow: 0 3px 20px 1px rgba(255, 140, 0, 0.7);
     }
     42% {
-        border-image-source: linear-gradient(-120deg, yellow, orange, red, violet, indigo, blue, green, yellow);
         box-shadow: 0 3px 20px 1px rgba(255, 255, 0, 0.7);
     }
     57% {
-        border-image-source: linear-gradient(-120deg, green, yellow, orange, red, violet, indigo, blue, green);
         box-shadow: 0 3px 20px 1px rgba(0, 128, 0, 0.7);
     }
     71% {
-        border-image-source: linear-gradient(-120deg, blue, green, yellow, orange, red, violet, indigo, blue);
         box-shadow: 0 3px 20px 1px rgba(0, 0, 255, 0.7);
     }
     85% {
-        border-image-source: linear-gradient(-120deg, indigo, blue, green, yellow, orange, red, violet, indigo);
         box-shadow: 0 3px 20px 1px rgba(75, 0, 130, 0.7);
     }
     100% {
-        border-image-source: linear-gradient(-120deg, violet, indigo, blue, green, yellow, orange, red, violet);
         box-shadow: 0 3px 20px 1px rgba(204, 94, 255, 0.7);
     }
 }
@@ -83,8 +73,8 @@ body, html {
 }
 
 .about{
-    background-color: rgb(253, 218, 190);
-    height: 820px;
+    background-color: rgb(200, 235, 249);
+    height: 1020px;
     width: 100%;
     text-align: center;
     margin-top: -22px;
@@ -122,6 +112,21 @@ body, html {
     transform: scale(1.1);
 }
 
+.learns{
+    background-color: rgba(255, 255, 255, 0);
+    width: 350px;
+    height: 150px;
+    box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    border-radius: 15px;
+    transition: all 0.2s ease;
+}
+
+.learns:hover{
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 .noobs{
     background-color: rgba(255, 255, 255, 0);
     width: 350px;
@@ -157,7 +162,7 @@ body, html {
     height: 50px;
     width: 200px;
     bottom: 50px;
-    right: -1000px;
+    right: -100vh;
     border-radius: 15px;
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
