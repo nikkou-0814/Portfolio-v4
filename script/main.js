@@ -109,3 +109,12 @@ function drawSine(canvas, t, zoom, delay) {
 }
 
 init();
+
+function showModal(id, content) {
+    document.getElementById(`overlay${id}`).style.display = 'flex';
+    document.getElementById(`modalContent${id}`).innerText = content;
+}
+
+function hideModal(id) {
+    document.getElementById(`overlay${id}`).style.display = 'none';
+}

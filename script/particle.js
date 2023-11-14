@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
         var scrollingElement = document.getElementById("bgwavejs");
-        scrollingElement.style.bottom = "-4vh";
+        scrollingElement.style.bottom = "-8vh";
     }, 0);
 });
 
