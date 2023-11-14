@@ -201,6 +201,7 @@ body, html {
     border-radius: 15px;
     transition: all 0.2s ease;
     margin: 15px;
+    cursor: pointer;
 }
 
 .note:hover{
