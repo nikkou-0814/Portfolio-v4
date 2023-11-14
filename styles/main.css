@@ -93,6 +93,7 @@ body, html {
     border-radius: 15px;
     transition: all 0.2s ease;
     margin: 20px;
+    border: 2px solid rgb(255, 255, 255, 0.3);
 }
 
 .profile:hover{
@@ -107,6 +108,7 @@ body, html {
     border-radius: 15px;
     transition: all 0.2s ease;
     margin: 20px;
+    border: 2px solid rgb(255, 255, 255, 0.3);
 }
 
 .skill:hover{
@@ -121,6 +123,7 @@ body, html {
     border-radius: 15px;
     transition: all 0.2s ease;
     margin: 20px;
+    border: 2px solid rgb(255, 255, 255, 0.3);
 }
 
 .learns:hover{
@@ -136,6 +139,7 @@ body, html {
     border-radius: 15px;
     transition: all 0.2s ease;
     margin: 20px;
+    border: 2px solid rgb(255, 255, 255, 0.3);
 }
 
 .noobs:hover{
@@ -160,6 +164,7 @@ body, html {
     position: fixed;
     background-color: rgba(240, 248, 255, 0.3);
     box-shadow: 0 0 10px 10px rgba(72, 255, 0, 0.2);
+    border: 2px solid rgb(255, 255, 255, 0.2);
     height: 50px;
     width: 200px;
     bottom: 50px;
@@ -231,7 +236,7 @@ body, html {
 }
 
 .modal {
-    background: white;
+    background-color: #bff3e2;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 0 30px 5px rgba(255, 255, 255, 0.5);
@@ -243,7 +248,7 @@ body, html {
     position: absolute;
     bottom: 40px;
     right: 40px;
-    background-color: rgb(255, 255, 255);
+    background-color: #bff3e2;
     box-shadow: 0 0 30px 5px rgba(255, 255, 255, 0.5);
     cursor: pointer;
     transform: scale(2);
@@ -264,4 +269,39 @@ body, html {
 
 .modalheadtext{
     font-size: 25px;
+}
+
+.made{
+    background-color: rgb(196, 217, 221);
+    margin-top: -25px;
+    text-align: center;
+}
+
+.mades{
+    background-color: rgb(255, 255, 255, 0.1);
+    box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgb(255, 255, 255, 0.3);
+    border-radius: 15px;
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    cursor: pointer;
+}
+
+.mades:hover{
+    transform: scale(1.1);
+}
+
+.mades:active{
+    transform: scale(0.9);
+}
+
+.madeimg{
+    height: 130px;
+    width: 300px;
+    border-radius: 15px;
+    display:block;
+    object-fit: cover;
 }
