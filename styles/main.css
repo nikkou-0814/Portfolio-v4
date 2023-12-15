@@ -6,6 +6,7 @@ body, html {
 
 .hello{
     background-color: #8191ec;
+    background-image: url(../image/noise.png);
     width: 100%;
     height: 100%;
     z-index: -100;
